@@ -57,9 +57,7 @@ export async function generateText(prompt: string): Promise<{
   }
 
   if (data.error) {
-    throw new Error(
-      `Gemini API error: ${data.error.message ?? "Unknown error"}`
-    );
+    throw new Error(`Gemini API error: ${data.error.message ?? "Unknown error"}`);
   }
 
   const modelText = data.candidates?.[0]?.content?.parts?.[0]?.text;

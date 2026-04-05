@@ -82,7 +82,10 @@ export function writeDailyPuzzlesTs(dailyPuzzles: DailyPuzzlesData): void {
   fs.writeFileSync(datedPath, fileContent, "utf-8");
 
   if (env.LATEST_DATED_PUZZLES_TS_OUTPUT_DIR.trim().length > 0) {
-    const extraOutputDir = path.resolve(process.cwd(), env.LATEST_DATED_PUZZLES_TS_OUTPUT_DIR);
+    const extraOutputDir = path.resolve(
+      process.cwd(),
+      env.LATEST_DATED_PUZZLES_TS_OUTPUT_DIR
+    );
     ensureDirectoryExists(extraOutputDir);
 
     const extraOutputPath = path.join(

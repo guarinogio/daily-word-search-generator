@@ -43,9 +43,7 @@ function normalizeWords(rawWords: unknown[]): DailyWord[] {
   return normalizedWords;
 }
 
-async function generateOnce(input: {
-  topic?: string;
-}): Promise<{
+async function generateOnce(input: { topic?: string }): Promise<{
   topic: string;
   normalizedWords: DailyWord[];
   rawApiResponseText: string;
@@ -68,7 +66,10 @@ async function generateOnce(input: {
     throw new Error("Model output was not valid JSON");
   }
 
-  if (typeof parsedPayload.topic !== "string" || parsedPayload.topic.trim().length === 0) {
+  if (
+    typeof parsedPayload.topic !== "string" ||
+    parsedPayload.topic.trim().length === 0
+  ) {
     throw new Error("Model output is missing a valid topic");
   }
 
@@ -91,9 +92,7 @@ async function generateOnce(input: {
   };
 }
 
-export async function generateDailyWords(input: {
-  topic?: string;
-}): Promise<{
+export async function generateDailyWords(input: { topic?: string }): Promise<{
   dailyWords: DailyWordsData;
   rawApiResponseText: string;
 }> {

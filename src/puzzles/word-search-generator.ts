@@ -68,10 +68,7 @@ function buildPlacement(
   };
 }
 
-export function generateWordSearchPuzzle(input: {
-  words: DailyWord[];
-  size: number;
-}): {
+export function generateWordSearchPuzzle(input: { words: DailyWord[]; size: number }): {
   size: number;
   grid: string[][];
   placements: Placement[];

@@ -38,7 +38,11 @@ function validatePlacementEndpoints(placement: Placement, puzzleId: number): voi
   );
 }
 
-function validatePlacementWord(grid: string[][], placement: Placement, puzzleId: number): void {
+function validatePlacementWord(
+  grid: string[][],
+  placement: Placement,
+  puzzleId: number
+): void {
   const reconstructed = readWordFromPath(grid, placement);
 
   assert(
@@ -51,7 +55,10 @@ export function validateDailyPuzzle(puzzle: DailyPuzzle): void {
   const size = puzzle.size;
 
   assert(Array.isArray(puzzle.grid), `Puzzle ${puzzle.id}: grid must be an array`);
-  assert(puzzle.grid.length === size, `Puzzle ${puzzle.id}: grid row count does not match size`);
+  assert(
+    puzzle.grid.length === size,
+    `Puzzle ${puzzle.id}: grid row count does not match size`
+  );
 
   for (const row of puzzle.grid) {
     assert(Array.isArray(row), `Puzzle ${puzzle.id}: grid row is not an array`);
