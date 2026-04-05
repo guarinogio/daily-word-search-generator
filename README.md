@@ -1,81 +1,100 @@
 # daily-word-search-generator
 
-A TypeScript CLI that generates daily themed word sets and word-search puzzle data for a frontend application.
+TypeScript CLI to generate daily word lists and word-search puzzle data using AI.
 
-## Overview
+---
 
-This project is designed to power a daily word-search game.
+## 🚀 Overview
 
-It can:
+This project generates:
 
-- generate a themed list of words using Google Gemini
-- normalize and validate those words
-- split them into multiple daily puzzles
-- generate word-search grids and placement metadata
-- export ready-to-consume `.json` and `.ts` files for a separate frontend project
+- themed word sets using Google Gemini
+- validated word-search puzzles
+- JSON and TypeScript outputs for frontend consumption
+- historical daily data with date-based files
 
-## Features
+It is designed to act as a **content pipeline** for a separate frontend (e.g., React app).
 
-- TypeScript-first CLI
-- `.env`-based configuration
-- strict configuration validation with `zod`
-- word normalization for puzzle-safe values
-- daily metadata with `id`, `date`, and `hash`
-- validated puzzle output
-- TypeScript and JSON output artifacts
+---
 
-## Output
-
-The generator writes files into the configured output directory.
-
-Default output files:
-
-- generated/raw-api-response.json
-- generated/daily-words.json
-- generated/daily-words.ts
-- generated/daily-puzzles.json
-- generated/daily-puzzles.ts
-
-## Project Structure
-
-```
-src/
-  @types/
-  ai/
-  cli/
-  config/
-  output/
-  puzzles/
-  types/
-  utils/
-generated/
-```
-
-## Requirements
-
-- Node.js 22+
-- npm
-
-## Installation
+## ⚡ Quick Start
 
 ```bash
-git clone <your-repo-url>
-cd daily-word-search-generator
 npm install
 cp .env.example .env
+npm run daily -- --topic "coffee shop"
 ```
 
-Then edit `.env` and add your Gemini API key.
+---
 
-## Environment Variables
+## 📦 Output
 
-Example:
+Generated files inside `generated/`:
+
+- `daily-words.json`
+- `daily-words.ts`
+- `daily-puzzles.json`
+- `daily-puzzles.ts`
+- `daily-puzzles-YYYY-MM-DD.ts` (historical)
+
+Optional external output (via `.env`):
+
+- latest dated puzzle `.ts` copied to another project
+
+---
+
+## 🧠 Architecture
+
+```
+AI → normalize → validate → split → generate puzzles → validate → export
+```
+
+---
+
+## 🧩 Generated Data Model
+
+Each puzzle includes:
+
+- grid (letter matrix)
+- words (label + value)
+- placements:
+  - start / end
+  - direction
+  - full path (cell coordinates)
+
+This allows frontend apps to render puzzles without recomputation.
+
+---
+
+## ⚙️ Commands
+
+```bash
+npm run generate
+npm run build:puzzles
+npm run daily
+```
+
+Additional:
+
+```bash
+npm run lint
+npm run check
+npm run validate
+npm run format
+```
+
+---
+
+## 🌍 Environment Variables
+
+Example `.env`:
 
 ```dotenv
-GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_API_KEY=your_key
 MODEL_NAME=gemini-2.5-flash
-LANGUAGE=en_US
+LANGUAGE=es
 OUTPUT_DIR=./generated
+LATEST_DATED_PUZZLES_TS_OUTPUT_DIR=
 WORDS_COUNT=50
 WORDS_REQUEST_COUNT=65
 PUZZLE_COUNT=5
@@ -86,115 +105,58 @@ MAX_GENERATION_ATTEMPTS=3
 
 ### Notes
 
-- `PUZZLE_COUNT * WORDS_PER_PUZZLE` must equal `WORDS_COUNT`
-- `WORDS_REQUEST_COUNT` should be greater than or equal to `WORDS_COUNT`
-- `generated/` is ignored by git by default
+- `PUZZLE_COUNT * WORDS_PER_PUZZLE = WORDS_COUNT`
+- `WORDS_REQUEST_COUNT >= WORDS_COUNT`
+- historical files are generated automatically
 
-## Commands
+---
 
-Generate words only:
-
-```bash
-npm run generate
-npm run generate -- --topic "coffee shop"
-```
-
-Build puzzles from an existing `daily-words.json`:
+## 🧑‍💻 Development
 
 ```bash
-npm run build:puzzles
-```
-
-Run the full pipeline:
-
-```bash
-npm run daily
-npm run daily -- --topic "coffee shop"
-```
-
-Type-check the project:
-
-```bash
+npm run lint
 npm run check
+npm run validate
 ```
 
-Format the code:
+---
 
-```bash
-npm run format
+## 🔐 Security
+
+- `.env` is ignored
+- API keys must never be committed
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+  ai/
+  cli/
+  config/
+  output/
+  puzzles/
+  types/
+  utils/
+generated/
+examples/
 ```
 
-## Data Model
+---
 
-### dailyWords
+## 🎯 Intended Usage
 
-```ts
-type DailyWordsData = {
-  id: string;
-  date: string;
-  topic: string;
-  hash: string;
-  words: {
-    label: string;
-    value: string;
-  }[];
-};
-```
+This project is meant to power:
 
-- label is the display-friendly version
-- value is the normalized puzzle-safe version
+- React apps
+- mobile puzzle games
+- daily word platforms
 
-### dailyPuzzles
+The frontend should consume the generated `.ts` or `.json` files directly.
 
-```ts
-type DailyPuzzlesData = {
-  id: string;
-  date: string;
-  topic: string;
-  hash: string;
-  puzzles: {
-    id: number;
-    size: number;
-    topic: string;
-    words: {
-      label: string;
-      value: string;
-    }[];
-    grid: string[][];
-    placements: {
-      label: string;
-      value: string;
-      word: string;
-      clean: string;
-      start: { row: number; col: number };
-      end: { row: number; col: number };
-      direction: "N" | "S" | "E" | "W" | "NE" | "NW" | "SE" | "SW";
-      path: { row: number; col: number }[];
-    }[];
-  }[];
-};
-```
+---
 
-## Intended Usage
-
-This repository is intended to be used as a content generator for another project, such as:
-
-- a React app
-- a mobile-friendly daily game
-- a word-search puzzle frontend
-
-The frontend should import or consume the generated files and focus only on rendering and gameplay.
-
-## Security
-
-Do not commit your `.env` file.
-
-Your Gemini API key should only exist in local or private deployment environments.
-
-## Notes on Dependencies
-
-This project currently uses @blex41/word-search to generate puzzle grids. The dependency is wrapped behind internal modules so it can be replaced later if needed.
-
-## License
+## 📜 License
 
 MIT

@@ -1,0 +1,208 @@
+{
+  "id": "2026-04-05",
+  "date": "2026-04-05",
+  "topic": "Coffee Shop",
+  "hash": "93bad945d04dc3426f251d9eb93ac6a1ff3743a022d49f14f2c610fd424e41fa",
+  "words": [
+    {
+      "label": "Coffee",
+      "value": "COFFEE"
+    },
+    {
+      "label": "Espresso",
+      "value": "ESPRESSO"
+    },
+    {
+      "label": "Latte",
+      "value": "LATTE"
+    },
+    {
+      "label": "Cappuccino",
+      "value": "CAPPUCCINO"
+    },
+    {
+      "label": "Mocha",
+      "value": "MOCHA"
+    },
+    {
+      "label": "Americano",
+      "value": "AMERICANO"
+    },
+    {
+      "label": "Macchiato",
+      "value": "MACCHIATO"
+    },
+    {
+      "label": "Flat White",
+      "value": "FLATWHITE"
+    },
+    {
+      "label": "Cold Brew",
+      "value": "COLDBREW"
+    },
+    {
+      "label": "Tea",
+      "value": "TEA"
+    },
+    {
+      "label": "Chai",
+      "value": "CHAI"
+    },
+    {
+      "label": "Frappuccino",
+      "value": "FRAPPUCCINO"
+    },
+    {
+      "label": "Hot Chocolate",
+      "value": "HOTCHOCOLATE"
+    },
+    {
+      "label": "Pastry",
+      "value": "PASTRY"
+    },
+    {
+      "label": "Croissant",
+      "value": "CROISSANT"
+    },
+    {
+      "label": "Muffin",
+      "value": "MUFFIN"
+    },
+    {
+      "label": "Scone",
+      "value": "SCONE"
+    },
+    {
+      "label": "Bagel",
+      "value": "BAGEL"
+    },
+    {
+      "label": "Donut",
+      "value": "DONUT"
+    },
+    {
+      "label": "Cookie",
+      "value": "COOKIE"
+    },
+    {
+      "label": "Sandwich",
+      "value": "SANDWICH"
+    },
+    {
+      "label": "Cake",
+      "value": "CAKE"
+    },
+    {
+      "label": "Barista",
+      "value": "BARISTA"
+    },
+    {
+      "label": "Grinder",
+      "value": "GRINDER"
+    },
+    {
+      "label": "Brewer",
+      "value": "BREWER"
+    },
+    {
+      "label": "Machine",
+      "value": "MACHINE"
+    },
+    {
+      "label": "Beans",
+      "value": "BEANS"
+    },
+    {
+      "label": "Milk",
+      "value": "MILK"
+    },
+    {
+      "label": "Syrup",
+      "value": "SYRUP"
+    },
+    {
+      "label": "Sugar",
+      "value": "SUGAR"
+    },
+    {
+      "label": "Cup",
+      "value": "CUP"
+    },
+    {
+      "label": "Mug",
+      "value": "MUG"
+    },
+    {
+      "label": "Lid",
+      "value": "LID"
+    },
+    {
+      "label": "Sleeve",
+      "value": "SLEEVE"
+    },
+    {
+      "label": "Stirrer",
+      "value": "STIRRER"
+    },
+    {
+      "label": "Spoon",
+      "value": "SPOON"
+    },
+    {
+      "label": "Napkin",
+      "value": "NAPKIN"
+    },
+    {
+      "label": "Tray",
+      "value": "TRAY"
+    },
+    {
+      "label": "Blender",
+      "value": "BLENDER"
+    },
+    {
+      "label": "Cafe",
+      "value": "CAFE"
+    },
+    {
+      "label": "Shop",
+      "value": "SHOP"
+    },
+    {
+      "label": "Customer",
+      "value": "CUSTOMER"
+    },
+    {
+      "label": "Table",
+      "value": "TABLE"
+    },
+    {
+      "label": "Chair",
+      "value": "CHAIR"
+    },
+    {
+      "label": "Wifi",
+      "value": "WIFI"
+    },
+    {
+      "label": "Outlet",
+      "value": "OUTLET"
+    },
+    {
+      "label": "Music",
+      "value": "MUSIC"
+    },
+    {
+      "label": "Ambiance",
+      "value": "AMBIANCE"
+    },
+    {
+      "label": "Seating",
+      "value": "SEATING"
+    },
+    {
+      "label": "Counter",
+      "value": "COUNTER"
+    }
+  ]
+}

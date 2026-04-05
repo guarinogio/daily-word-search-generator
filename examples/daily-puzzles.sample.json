@@ -1,0 +1,3457 @@
+{
+  "id": "2026-04-05",
+  "date": "2026-04-05",
+  "topic": "Coffee Shop",
+  "hash": "2dcae9c2dfe4130f5e64e98e48681c7d82d1fae67c2ed39d3828b151cc9054f0",
+  "puzzles": [
+    {
+      "id": 1,
+      "size": 14,
+      "topic": "Coffee Shop",
+      "words": [
+        {
+          "label": "Coffee",
+          "value": "COFFEE"
+        },
+        {
+          "label": "Espresso",
+          "value": "ESPRESSO"
+        },
+        {
+          "label": "Latte",
+          "value": "LATTE"
+        },
+        {
+          "label": "Cappuccino",
+          "value": "CAPPUCCINO"
+        },
+        {
+          "label": "Mocha",
+          "value": "MOCHA"
+        },
+        {
+          "label": "Americano",
+          "value": "AMERICANO"
+        },
+        {
+          "label": "Macchiato",
+          "value": "MACCHIATO"
+        },
+        {
+          "label": "Flat White",
+          "value": "FLATWHITE"
+        },
+        {
+          "label": "Cold Brew",
+          "value": "COLDBREW"
+        },
+        {
+          "label": "Tea",
+          "value": "TEA"
+        }
+      ],
+      "grid": [
+        [
+          "G",
+          "T",
+          "L",
+          "J",
+          "C",
+          "O",
+          "L",
+          "D",
+          "B",
+          "R",
+          "E",
+          "W",
+          "A",
+          "U"
+        ],
+        [
+          "D",
+          "M",
+          "V",
+          "D",
+          "H",
+          "C",
+          "Z",
+          "V",
+          "Y",
+          "T",
+          "M",
+          "P",
+          "Y",
+          "G"
+        ],
+        [
+          "Y",
+          "E",
+          "Q",
+          "X",
+          "K",
+          "N",
+          "D",
+          "X",
+          "B",
+          "A",
+          "T",
+          "V",
+          "Q",
+          "I"
+        ],
+        [
+          "Z",
+          "U",
+          "X",
+          "Y",
+          "P",
+          "P",
+          "W",
+          "U",
+          "C",
+          "B",
+          "W",
+          "X",
+          "S",
+          "D"
+        ],
+        [
+          "E",
+          "J",
+          "C",
+          "A",
+          "P",
+          "P",
+          "U",
+          "C",
+          "C",
+          "I",
+          "N",
+          "O",
+          "F",
+          "E"
+        ],
+        [
+          "C",
+          "S",
+          "X",
+          "E",
+          "T",
+          "I",
+          "H",
+          "W",
+          "T",
+          "A",
+          "L",
+          "F",
+          "O",
+          "E"
+        ],
+        [
+          "C",
+          "Z",
+          "P",
+          "U",
+          "V",
+          "I",
+          "W",
+          "Q",
+          "A",
+          "N",
+          "Z",
+          "N",
+          "W",
+          "F"
+        ],
+        [
+          "Q",
+          "V",
+          "X",
+          "R",
+          "A",
+          "X",
+          "E",
+          "M",
+          "B",
+          "Y",
+          "A",
+          "Q",
+          "N",
+          "F"
+        ],
+        [
+          "T",
+          "F",
+          "M",
+          "T",
+          "E",
+          "D",
+          "W",
+          "Y",
+          "K",
+          "C",
+          "F",
+          "P",
+          "T",
+          "O"
+        ],
+        [
+          "X",
+          "M",
+          "O",
+          "O",
+          "U",
+          "S",
+          "K",
+          "Y",
+          "I",
+          "W",
+          "L",
+          "T",
+          "J",
+          "C"
+        ],
+        [
+          "A",
+          "T",
+          "U",
+          "C",
+          "C",
+          "X",
+          "S",
+          "R",
+          "H",
+          "A",
+          "D",
+          "S",
+          "G",
+          "E"
+        ],
+        [
+          "G",
+          "N",
+          "I",
+          "W",
+          "U",
+          "H",
+          "E",
+          "O",
+          "T",
+          "P",
+          "T",
+          "Y",
+          "P",
+          "D"
+        ],
+        [
+          "Q",
+          "T",
+          "N",
+          "Q",
+          "B",
+          "M",
+          "A",
+          "T",
+          "M",
+          "M",
+          "E",
+          "W",
+          "J",
+          "Y"
+        ],
+        [
+          "X",
+          "X",
+          "Q",
+          "T",
+          "A",
+          "X",
+          "E",
+          "J",
+          "Q",
+          "M",
+          "A",
+          "G",
+          "Y",
+          "Z"
+        ]
+      ],
+      "placements": [
+        {
+          "label": "Americano",
+          "value": "AMERICANO",
+          "word": "AMERICANO",
+          "clean": "AMERICANO",
+          "start": {
+            "row": 13,
+            "col": 4
+          },
+          "end": {
+            "row": 5,
+            "col": 12
+          },
+          "direction": "NE",
+          "path": [
+            {
+              "row": 13,
+              "col": 4
+            },
+            {
+              "row": 12,
+              "col": 5
+            },
+            {
+              "row": 11,
+              "col": 6
+            },
+            {
+              "row": 10,
+              "col": 7
+            },
+            {
+              "row": 9,
+              "col": 8
+            },
+            {
+              "row": 8,
+              "col": 9
+            },
+            {
+              "row": 7,
+              "col": 10
+            },
+            {
+              "row": 6,
+              "col": 11
+            },
+            {
+              "row": 5,
+              "col": 12
+            }
+          ]
+        },
+        {
+          "label": "Cappuccino",
+          "value": "CAPPUCCINO",
+          "word": "CAPPUCCINO",
+          "clean": "CAPPUCCINO",
+          "start": {
+            "row": 4,
+            "col": 2
+          },
+          "end": {
+            "row": 4,
+            "col": 11
+          },
+          "direction": "E",
+          "path": [
+            {
+              "row": 4,
+              "col": 2
+            },
+            {
+              "row": 4,
+              "col": 3
+            },
+            {
+              "row": 4,
+              "col": 4
+            },
+            {
+              "row": 4,
+              "col": 5
+            },
+            {
+              "row": 4,
+              "col": 6
+            },
+            {
+              "row": 4,
+              "col": 7
+            },
+            {
+              "row": 4,
+              "col": 8
+            },
+            {
+              "row": 4,
+              "col": 9
+            },
+            {
+              "row": 4,
+              "col": 10
+            },
+            {
+              "row": 4,
+              "col": 11
+            }
+          ]
+        },
+        {
+          "label": "Coffee",
+          "value": "COFFEE",
+          "word": "COFFEE",
+          "clean": "COFFEE",
+          "start": {
+            "row": 9,
+            "col": 13
+          },
+          "end": {
+            "row": 4,
+            "col": 13
+          },
+          "direction": "N",
+          "path": [
+            {
+              "row": 9,
+              "col": 13
+            },
+            {
+              "row": 8,
+              "col": 13
+            },
+            {
+              "row": 7,
+              "col": 13
+            },
+            {
+              "row": 6,
+              "col": 13
+            },
+            {
+              "row": 5,
+              "col": 13
+            },
+            {
+              "row": 4,
+              "col": 13
+            }
+          ]
+        },
+        {
+          "label": "Cold Brew",
+          "value": "COLDBREW",
+          "word": "COLDBREW",
+          "clean": "COLDBREW",
+          "start": {
+            "row": 0,
+            "col": 4
+          },
+          "end": {
+            "row": 0,
+            "col": 11
+          },
+          "direction": "E",
+          "path": [
+            {
+              "row": 0,
+              "col": 4
+            },
+            {
+              "row": 0,
+              "col": 5
+            },
+            {
+              "row": 0,
+              "col": 6
+            },
+            {
+              "row": 0,
+              "col": 7
+            },
+            {
+              "row": 0,
+              "col": 8
+            },
+            {
+              "row": 0,
+              "col": 9
+            },
+            {
+              "row": 0,
+              "col": 10
+            },
+            {
+              "row": 0,
+              "col": 11
+            }
+          ]
+        },
+        {
+          "label": "Espresso",
+          "value": "ESPRESSO",
+          "word": "ESPRESSO",
+          "clean": "ESPRESSO",
+          "start": {
+            "row": 4,
+            "col": 0
+          },
+          "end": {
+            "row": 11,
+            "col": 7
+          },
+          "direction": "SE",
+          "path": [
+            {
+              "row": 4,
+              "col": 0
+            },
+            {
+              "row": 5,
+              "col": 1
+            },
+            {
+              "row": 6,
+              "col": 2
+            },
+            {
+              "row": 7,
+              "col": 3
+            },
+            {
+              "row": 8,
+              "col": 4
+            },
+            {
+              "row": 9,
+              "col": 5
+            },
+            {
+              "row": 10,
+              "col": 6
+            },
+            {
+              "row": 11,
+              "col": 7
+            }
+          ]
+        },
+        {
+          "label": "Flat White",
+          "value": "FLATWHITE",
+          "word": "FLATWHITE",
+          "clean": "FLATWHITE",
+          "start": {
+            "row": 5,
+            "col": 11
+          },
+          "end": {
+            "row": 5,
+            "col": 3
+          },
+          "direction": "W",
+          "path": [
+            {
+              "row": 5,
+              "col": 11
+            },
+            {
+              "row": 5,
+              "col": 10
+            },
+            {
+              "row": 5,
+              "col": 9
+            },
+            {
+              "row": 5,
+              "col": 8
+            },
+            {
+              "row": 5,
+              "col": 7
+            },
+            {
+              "row": 5,
+              "col": 6
+            },
+            {
+              "row": 5,
+              "col": 5
+            },
+            {
+              "row": 5,
+              "col": 4
+            },
+            {
+              "row": 5,
+              "col": 3
+            }
+          ]
+        },
+        {
+          "label": "Latte",
+          "value": "LATTE",
+          "word": "LATTE",
+          "clean": "LATTE",
+          "start": {
+            "row": 9,
+            "col": 10
+          },
+          "end": {
+            "row": 13,
+            "col": 6
+          },
+          "direction": "SW",
+          "path": [
+            {
+              "row": 9,
+              "col": 10
+            },
+            {
+              "row": 10,
+              "col": 9
+            },
+            {
+              "row": 11,
+              "col": 8
+            },
+            {
+              "row": 12,
+              "col": 7
+            },
+            {
+              "row": 13,
+              "col": 6
+            }
+          ]
+        },
+        {
+          "label": "Macchiato",
+          "value": "MACCHIATO",
+          "word": "MACCHIATO",
+          "clean": "MACCHIATO",
+          "start": {
+            "row": 1,
+            "col": 10
+          },
+          "end": {
+            "row": 9,
+            "col": 2
+          },
+          "direction": "SW",
+          "path": [
+            {
+              "row": 1,
+              "col": 10
+            },
+            {
+              "row": 2,
+              "col": 9
+            },
+            {
+              "row": 3,
+              "col": 8
+            },
+            {
+              "row": 4,
+              "col": 7
+            },
+            {
+              "row": 5,
+              "col": 6
+            },
+            {
+              "row": 6,
+              "col": 5
+            },
+            {
+              "row": 7,
+              "col": 4
+            },
+            {
+              "row": 8,
+              "col": 3
+            },
+            {
+              "row": 9,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "label": "Mocha",
+          "value": "MOCHA",
+          "word": "MOCHA",
+          "clean": "MOCHA",
+          "start": {
+            "row": 8,
+            "col": 2
+          },
+          "end": {
+            "row": 12,
+            "col": 6
+          },
+          "direction": "SE",
+          "path": [
+            {
+              "row": 8,
+              "col": 2
+            },
+            {
+              "row": 9,
+              "col": 3
+            },
+            {
+              "row": 10,
+              "col": 4
+            },
+            {
+              "row": 11,
+              "col": 5
+            },
+            {
+              "row": 12,
+              "col": 6
+            }
+          ]
+        },
+        {
+          "label": "Tea",
+          "value": "TEA",
+          "word": "TEA",
+          "clean": "TEA",
+          "start": {
+            "row": 11,
+            "col": 10
+          },
+          "end": {
+            "row": 13,
+            "col": 10
+          },
+          "direction": "S",
+          "path": [
+            {
+              "row": 11,
+              "col": 10
+            },
+            {
+              "row": 12,
+              "col": 10
+            },
+            {
+              "row": 13,
+              "col": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "size": 14,
+      "topic": "Coffee Shop",
+      "words": [
+        {
+          "label": "Chai",
+          "value": "CHAI"
+        },
+        {
+          "label": "Frappuccino",
+          "value": "FRAPPUCCINO"
+        },
+        {
+          "label": "Hot Chocolate",
+          "value": "HOTCHOCOLATE"
+        },
+        {
+          "label": "Pastry",
+          "value": "PASTRY"
+        },
+        {
+          "label": "Croissant",
+          "value": "CROISSANT"
+        },
+        {
+          "label": "Muffin",
+          "value": "MUFFIN"
+        },
+        {
+          "label": "Scone",
+          "value": "SCONE"
+        },
+        {
+          "label": "Bagel",
+          "value": "BAGEL"
+        },
+        {
+          "label": "Donut",
+          "value": "DONUT"
+        },
+        {
+          "label": "Cookie",
+          "value": "COOKIE"
+        }
+      ],
+      "grid": [
+        [
+          "J",
+          "E",
+          "K",
+          "Y",
+          "I",
+          "P",
+          "G",
+          "F",
+          "J",
+          "T",
+          "T",
+          "Q",
+          "M",
+          "J"
+        ],
+        [
+          "E",
+          "N",
+          "U",
+          "R",
+          "A",
+          "Z",
+          "N",
+          "H",
+          "Q",
+          "U",
+          "P",
+          "S",
+          "C",
+          "S"
+        ],
+        [
+          "G",
+          "H",
+          "S",
+          "O",
+          "D",
+          "S",
+          "E",
+          "S",
+          "T",
+          "A",
+          "E",
+          "N",
+          "J",
+          "I"
+        ],
+        [
+          "M",
+          "O",
+          "V",
+          "N",
+          "O",
+          "Y",
+          "I",
+          "N",
+          "S",
+          "V",
+          "N",
+          "P",
+          "A",
+          "S"
+        ],
+        [
+          "L",
+          "T",
+          "N",
+          "N",
+          "N",
+          "P",
+          "S",
+          "T",
+          "O",
+          "O",
+          "J",
+          "F",
+          "N",
+          "K"
+        ],
+        [
+          "W",
+          "C",
+          "C",
+          "G",
+          "U",
+          "M",
+          "R",
+          "T",
+          "U",
+          "C",
+          "L",
+          "R",
+          "A",
+          "A"
+        ],
+        [
+          "C",
+          "H",
+          "O",
+          "Q",
+          "T",
+          "Y",
+          "Y",
+          "X",
+          "B",
+          "Y",
+          "S",
+          "O",
+          "S",
+          "T"
+        ],
+        [
+          "M",
+          "O",
+          "R",
+          "I",
+          "R",
+          "L",
+          "Z",
+          "A",
+          "Q",
+          "I",
+          "W",
+          "C",
+          "E",
+          "H"
+        ],
+        [
+          "X",
+          "C",
+          "O",
+          "N",
+          "J",
+          "N",
+          "U",
+          "R",
+          "H",
+          "A",
+          "T",
+          "O",
+          "D",
+          "H"
+        ],
+        [
+          "H",
+          "O",
+          "M",
+          "K",
+          "B",
+          "Z",
+          "V",
+          "V",
+          "F",
+          "H",
+          "O",
+          "M",
+          "O",
+          "S"
+        ],
+        [
+          "K",
+          "L",
+          "J",
+          "L",
+          "I",
+          "E",
+          "V",
+          "Q",
+          "Z",
+          "C",
+          "B",
+          "H",
+          "R",
+          "T"
+        ],
+        [
+          "B",
+          "A",
+          "G",
+          "E",
+          "L",
+          "E",
+          "M",
+          "U",
+          "F",
+          "F",
+          "I",
+          "N",
+          "F",
+          "I"
+        ],
+        [
+          "V",
+          "T",
+          "M",
+          "F",
+          "R",
+          "A",
+          "P",
+          "P",
+          "U",
+          "C",
+          "C",
+          "I",
+          "N",
+          "O"
+        ],
+        [
+          "A",
+          "E",
+          "N",
+          "C",
+          "R",
+          "O",
+          "I",
+          "S",
+          "S",
+          "A",
+          "N",
+          "T",
+          "W",
+          "L"
+        ]
+      ],
+      "placements": [
+        {
+          "label": "Bagel",
+          "value": "BAGEL",
+          "word": "BAGEL",
+          "clean": "BAGEL",
+          "start": {
+            "row": 11,
+            "col": 0
+          },
+          "end": {
+            "row": 11,
+            "col": 4
+          },
+          "direction": "E",
+          "path": [
+            {
+              "row": 11,
+              "col": 0
+            },
+            {
+              "row": 11,
+              "col": 1
+            },
+            {
+              "row": 11,
+              "col": 2
+            },
+            {
+              "row": 11,
+              "col": 3
+            },
+            {
+              "row": 11,
+              "col": 4
+            }
+          ]
+        },
+        {
+          "label": "Chai",
+          "value": "CHAI",
+          "word": "CHAI",
+          "clean": "CHAI",
+          "start": {
+            "row": 10,
+            "col": 9
+          },
+          "end": {
+            "row": 7,
+            "col": 9
+          },
+          "direction": "N",
+          "path": [
+            {
+              "row": 10,
+              "col": 9
+            },
+            {
+              "row": 9,
+              "col": 9
+            },
+            {
+              "row": 8,
+              "col": 9
+            },
+            {
+              "row": 7,
+              "col": 9
+            }
+          ]
+        },
+        {
+          "label": "Cookie",
+          "value": "COOKIE",
+          "word": "COOKIE",
+          "clean": "COOKIE",
+          "start": {
+            "row": 6,
+            "col": 0
+          },
+          "end": {
+            "row": 11,
+            "col": 5
+          },
+          "direction": "SE",
+          "path": [
+            {
+              "row": 6,
+              "col": 0
+            },
+            {
+              "row": 7,
+              "col": 1
+            },
+            {
+              "row": 8,
+              "col": 2
+            },
+            {
+              "row": 9,
+              "col": 3
+            },
+            {
+              "row": 10,
+              "col": 4
+            },
+            {
+              "row": 11,
+              "col": 5
+            }
+          ]
+        },
+        {
+          "label": "Croissant",
+          "value": "CROISSANT",
+          "word": "CROISSANT",
+          "clean": "CROISSANT",
+          "start": {
+            "row": 13,
+            "col": 3
+          },
+          "end": {
+            "row": 13,
+            "col": 11
+          },
+          "direction": "E",
+          "path": [
+            {
+              "row": 13,
+              "col": 3
+            },
+            {
+              "row": 13,
+              "col": 4
+            },
+            {
+              "row": 13,
+              "col": 5
+            },
+            {
+              "row": 13,
+              "col": 6
+            },
+            {
+              "row": 13,
+              "col": 7
+            },
+            {
+              "row": 13,
+              "col": 8
+            },
+            {
+              "row": 13,
+              "col": 9
+            },
+            {
+              "row": 13,
+              "col": 10
+            },
+            {
+              "row": 13,
+              "col": 11
+            }
+          ]
+        },
+        {
+          "label": "Donut",
+          "value": "DONUT",
+          "word": "DONUT",
+          "clean": "DONUT",
+          "start": {
+            "row": 2,
+            "col": 4
+          },
+          "end": {
+            "row": 6,
+            "col": 4
+          },
+          "direction": "S",
+          "path": [
+            {
+              "row": 2,
+              "col": 4
+            },
+            {
+              "row": 3,
+              "col": 4
+            },
+            {
+              "row": 4,
+              "col": 4
+            },
+            {
+              "row": 5,
+              "col": 4
+            },
+            {
+              "row": 6,
+              "col": 4
+            }
+          ]
+        },
+        {
+          "label": "Frappuccino",
+          "value": "FRAPPUCCINO",
+          "word": "FRAPPUCCINO",
+          "clean": "FRAPPUCCINO",
+          "start": {
+            "row": 12,
+            "col": 3
+          },
+          "end": {
+            "row": 12,
+            "col": 13
+          },
+          "direction": "E",
+          "path": [
+            {
+              "row": 12,
+              "col": 3
+            },
+            {
+              "row": 12,
+              "col": 4
+            },
+            {
+              "row": 12,
+              "col": 5
+            },
+            {
+              "row": 12,
+              "col": 6
+            },
+            {
+              "row": 12,
+              "col": 7
+            },
+            {
+              "row": 12,
+              "col": 8
+            },
+            {
+              "row": 12,
+              "col": 9
+            },
+            {
+              "row": 12,
+              "col": 10
+            },
+            {
+              "row": 12,
+              "col": 11
+            },
+            {
+              "row": 12,
+              "col": 12
+            },
+            {
+              "row": 12,
+              "col": 13
+            }
+          ]
+        },
+        {
+          "label": "Hot Chocolate",
+          "value": "HOTCHOCOLATE",
+          "word": "HOTCHOCOLATE",
+          "clean": "HOTCHOCOLATE",
+          "start": {
+            "row": 2,
+            "col": 1
+          },
+          "end": {
+            "row": 13,
+            "col": 1
+          },
+          "direction": "S",
+          "path": [
+            {
+              "row": 2,
+              "col": 1
+            },
+            {
+              "row": 3,
+              "col": 1
+            },
+            {
+              "row": 4,
+              "col": 1
+            },
+            {
+              "row": 5,
+              "col": 1
+            },
+            {
+              "row": 6,
+              "col": 1
+            },
+            {
+              "row": 7,
+              "col": 1
+            },
+            {
+              "row": 8,
+              "col": 1
+            },
+            {
+              "row": 9,
+              "col": 1
+            },
+            {
+              "row": 10,
+              "col": 1
+            },
+            {
+              "row": 11,
+              "col": 1
+            },
+            {
+              "row": 12,
+              "col": 1
+            },
+            {
+              "row": 13,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "label": "Muffin",
+          "value": "MUFFIN",
+          "word": "MUFFIN",
+          "clean": "MUFFIN",
+          "start": {
+            "row": 11,
+            "col": 6
+          },
+          "end": {
+            "row": 11,
+            "col": 11
+          },
+          "direction": "E",
+          "path": [
+            {
+              "row": 11,
+              "col": 6
+            },
+            {
+              "row": 11,
+              "col": 7
+            },
+            {
+              "row": 11,
+              "col": 8
+            },
+            {
+              "row": 11,
+              "col": 9
+            },
+            {
+              "row": 11,
+              "col": 10
+            },
+            {
+              "row": 11,
+              "col": 11
+            }
+          ]
+        },
+        {
+          "label": "Pastry",
+          "value": "PASTRY",
+          "word": "PASTRY",
+          "clean": "PASTRY",
+          "start": {
+            "row": 1,
+            "col": 10
+          },
+          "end": {
+            "row": 6,
+            "col": 5
+          },
+          "direction": "SW",
+          "path": [
+            {
+              "row": 1,
+              "col": 10
+            },
+            {
+              "row": 2,
+              "col": 9
+            },
+            {
+              "row": 3,
+              "col": 8
+            },
+            {
+              "row": 4,
+              "col": 7
+            },
+            {
+              "row": 5,
+              "col": 6
+            },
+            {
+              "row": 6,
+              "col": 5
+            }
+          ]
+        },
+        {
+          "label": "Scone",
+          "value": "SCONE",
+          "word": "SCONE",
+          "clean": "SCONE",
+          "start": {
+            "row": 6,
+            "col": 10
+          },
+          "end": {
+            "row": 2,
+            "col": 6
+          },
+          "direction": "NW",
+          "path": [
+            {
+              "row": 6,
+              "col": 10
+            },
+            {
+              "row": 5,
+              "col": 9
+            },
+            {
+              "row": 4,
+              "col": 8
+            },
+            {
+              "row": 3,
+              "col": 7
+            },
+            {
+              "row": 2,
+              "col": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "size": 14,
+      "topic": "Coffee Shop",
+      "words": [
+        {
+          "label": "Sandwich",
+          "value": "SANDWICH"
+        },
+        {
+          "label": "Cake",
+          "value": "CAKE"
+        },
+        {
+          "label": "Barista",
+          "value": "BARISTA"
+        },
+        {
+          "label": "Grinder",
+          "value": "GRINDER"
+        },
+        {
+          "label": "Brewer",
+          "value": "BREWER"
+        },
+        {
+          "label": "Machine",
+          "value": "MACHINE"
+        },
+        {
+          "label": "Beans",
+          "value": "BEANS"
+        },
+        {
+          "label": "Milk",
+          "value": "MILK"
+        },
+        {
+          "label": "Syrup",
+          "value": "SYRUP"
+        },
+        {
+          "label": "Sugar",
+          "value": "SUGAR"
+        }
+      ],
+      "grid": [
+        [
+          "U",
+          "W",
+          "H",
+          "T",
+          "Y",
+          "I",
+          "P",
+          "T",
+          "U",
+          "Q",
+          "K",
+          "U",
+          "V",
+          "K"
+        ],
+        [
+          "F",
+          "U",
+          "T",
+          "C",
+          "J",
+          "K",
+          "U",
+          "I",
+          "P",
+          "P",
+          "I",
+          "N",
+          "S",
+          "W"
+        ],
+        [
+          "H",
+          "G",
+          "R",
+          "M",
+          "S",
+          "I",
+          "Z",
+          "F",
+          "A",
+          "L",
+          "M",
+          "G",
+          "H",
+          "B"
+        ],
+        [
+          "C",
+          "J",
+          "R",
+          "S",
+          "A",
+          "J",
+          "O",
+          "N",
+          "V",
+          "P",
+          "O",
+          "A",
+          "G",
+          "R"
+        ],
+        [
+          "I",
+          "C",
+          "B",
+          "I",
+          "Y",
+          "C",
+          "E",
+          "I",
+          "F",
+          "M",
+          "O",
+          "N",
+          "I",
+          "A"
+        ],
+        [
+          "W",
+          "Y",
+          "W",
+          "L",
+          "N",
+          "R",
+          "H",
+          "O",
+          "M",
+          "I",
+          "V",
+          "R",
+          "Z",
+          "G"
+        ],
+        [
+          "D",
+          "I",
+          "P",
+          "M",
+          "B",
+          "D",
+          "U",
+          "I",
+          "H",
+          "L",
+          "S",
+          "N",
+          "Q",
+          "U"
+        ],
+        [
+          "N",
+          "B",
+          "B",
+          "F",
+          "X",
+          "A",
+          "E",
+          "P",
+          "N",
+          "K",
+          "T",
+          "C",
+          "R",
+          "S"
+        ],
+        [
+          "A",
+          "O",
+          "R",
+          "S",
+          "E",
+          "X",
+          "R",
+          "R",
+          "B",
+          "E",
+          "Z",
+          "E",
+          "I",
+          "C"
+        ],
+        [
+          "S",
+          "Q",
+          "E",
+          "K",
+          "Q",
+          "H",
+          "Y",
+          "I",
+          "U",
+          "Y",
+          "W",
+          "W",
+          "A",
+          "Z"
+        ],
+        [
+          "J",
+          "K",
+          "F",
+          "B",
+          "E",
+          "A",
+          "N",
+          "S",
+          "S",
+          "E",
+          "M",
+          "K",
+          "Y",
+          "C"
+        ],
+        [
+          "Y",
+          "X",
+          "Y",
+          "T",
+          "Y",
+          "G",
+          "K",
+          "F",
+          "R",
+          "T",
+          "E",
+          "I",
+          "X",
+          "I"
+        ],
+        [
+          "D",
+          "Z",
+          "T",
+          "H",
+          "G",
+          "H",
+          "O",
+          "B",
+          "H",
+          "U",
+          "A",
+          "N",
+          "B",
+          "Y"
+        ],
+        [
+          "B",
+          "W",
+          "H",
+          "N",
+          "J",
+          "X",
+          "R",
+          "U",
+          "I",
+          "Y",
+          "B",
+          "D",
+          "Y",
+          "R"
+        ]
+      ],
+      "placements": [
+        {
+          "label": "Barista",
+          "value": "BARISTA",
+          "word": "BARISTA",
+          "clean": "BARISTA",
+          "start": {
+            "row": 6,
+            "col": 4
+          },
+          "end": {
+            "row": 12,
+            "col": 10
+          },
+          "direction": "SE",
+          "path": [
+            {
+              "row": 6,
+              "col": 4
+            },
+            {
+              "row": 7,
+              "col": 5
+            },
+            {
+              "row": 8,
+              "col": 6
+            },
+            {
+              "row": 9,
+              "col": 7
+            },
+            {
+              "row": 10,
+              "col": 8
+            },
+            {
+              "row": 11,
+              "col": 9
+            },
+            {
+              "row": 12,
+              "col": 10
+            }
+          ]
+        },
+        {
+          "label": "Beans",
+          "value": "BEANS",
+          "word": "BEANS",
+          "clean": "BEANS",
+          "start": {
+            "row": 10,
+            "col": 3
+          },
+          "end": {
+            "row": 10,
+            "col": 7
+          },
+          "direction": "E",
+          "path": [
+            {
+              "row": 10,
+              "col": 3
+            },
+            {
+              "row": 10,
+              "col": 4
+            },
+            {
+              "row": 10,
+              "col": 5
+            },
+            {
+              "row": 10,
+              "col": 6
+            },
+            {
+              "row": 10,
+              "col": 7
+            }
+          ]
+        },
+        {
+          "label": "Brewer",
+          "value": "BREWER",
+          "word": "BREWER",
+          "clean": "BREWER",
+          "start": {
+            "row": 12,
+            "col": 7
+          },
+          "end": {
+            "row": 7,
+            "col": 12
+          },
+          "direction": "NE",
+          "path": [
+            {
+              "row": 12,
+              "col": 7
+            },
+            {
+              "row": 11,
+              "col": 8
+            },
+            {
+              "row": 10,
+              "col": 9
+            },
+            {
+              "row": 9,
+              "col": 10
+            },
+            {
+              "row": 8,
+              "col": 11
+            },
+            {
+              "row": 7,
+              "col": 12
+            }
+          ]
+        },
+        {
+          "label": "Cake",
+          "value": "CAKE",
+          "word": "CAKE",
+          "clean": "CAKE",
+          "start": {
+            "row": 8,
+            "col": 13
+          },
+          "end": {
+            "row": 11,
+            "col": 10
+          },
+          "direction": "SW",
+          "path": [
+            {
+              "row": 8,
+              "col": 13
+            },
+            {
+              "row": 9,
+              "col": 12
+            },
+            {
+              "row": 10,
+              "col": 11
+            },
+            {
+              "row": 11,
+              "col": 10
+            }
+          ]
+        },
+        {
+          "label": "Grinder",
+          "value": "GRINDER",
+          "word": "GRINDER",
+          "clean": "GRINDER",
+          "start": {
+            "row": 2,
+            "col": 1
+          },
+          "end": {
+            "row": 8,
+            "col": 7
+          },
+          "direction": "SE",
+          "path": [
+            {
+              "row": 2,
+              "col": 1
+            },
+            {
+              "row": 3,
+              "col": 2
+            },
+            {
+              "row": 4,
+              "col": 3
+            },
+            {
+              "row": 5,
+              "col": 4
+            },
+            {
+              "row": 6,
+              "col": 5
+            },
+            {
+              "row": 7,
+              "col": 6
+            },
+            {
+              "row": 8,
+              "col": 7
+            }
+          ]
+        },
+        {
+          "label": "Machine",
+          "value": "MACHINE",
+          "word": "MACHINE",
+          "clean": "MACHINE",
+          "start": {
+            "row": 2,
+            "col": 3
+          },
+          "end": {
+            "row": 8,
+            "col": 9
+          },
+          "direction": "SE",
+          "path": [
+            {
+              "row": 2,
+              "col": 3
+            },
+            {
+              "row": 3,
+              "col": 4
+            },
+            {
+              "row": 4,
+              "col": 5
+            },
+            {
+              "row": 5,
+              "col": 6
+            },
+            {
+              "row": 6,
+              "col": 7
+            },
+            {
+              "row": 7,
+              "col": 8
+            },
+            {
+              "row": 8,
+              "col": 9
+            }
+          ]
+        },
+        {
+          "label": "Milk",
+          "value": "MILK",
+          "word": "MILK",
+          "clean": "MILK",
+          "start": {
+            "row": 4,
+            "col": 9
+          },
+          "end": {
+            "row": 7,
+            "col": 9
+          },
+          "direction": "S",
+          "path": [
+            {
+              "row": 4,
+              "col": 9
+            },
+            {
+              "row": 5,
+              "col": 9
+            },
+            {
+              "row": 6,
+              "col": 9
+            },
+            {
+              "row": 7,
+              "col": 9
+            }
+          ]
+        },
+        {
+          "label": "Sandwich",
+          "value": "SANDWICH",
+          "word": "SANDWICH",
+          "clean": "SANDWICH",
+          "start": {
+            "row": 9,
+            "col": 0
+          },
+          "end": {
+            "row": 2,
+            "col": 0
+          },
+          "direction": "N",
+          "path": [
+            {
+              "row": 9,
+              "col": 0
+            },
+            {
+              "row": 8,
+              "col": 0
+            },
+            {
+              "row": 7,
+              "col": 0
+            },
+            {
+              "row": 6,
+              "col": 0
+            },
+            {
+              "row": 5,
+              "col": 0
+            },
+            {
+              "row": 4,
+              "col": 0
+            },
+            {
+              "row": 3,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "label": "Sugar",
+          "value": "SUGAR",
+          "word": "SUGAR",
+          "clean": "SUGAR",
+          "start": {
+            "row": 7,
+            "col": 13
+          },
+          "end": {
+            "row": 3,
+            "col": 13
+          },
+          "direction": "N",
+          "path": [
+            {
+              "row": 7,
+              "col": 13
+            },
+            {
+              "row": 6,
+              "col": 13
+            },
+            {
+              "row": 5,
+              "col": 13
+            },
+            {
+              "row": 4,
+              "col": 13
+            },
+            {
+              "row": 3,
+              "col": 13
+            }
+          ]
+        },
+        {
+          "label": "Syrup",
+          "value": "SYRUP",
+          "word": "SYRUP",
+          "clean": "SYRUP",
+          "start": {
+            "row": 3,
+            "col": 3
+          },
+          "end": {
+            "row": 7,
+            "col": 7
+          },
+          "direction": "SE",
+          "path": [
+            {
+              "row": 3,
+              "col": 3
+            },
+            {
+              "row": 4,
+              "col": 4
+            },
+            {
+              "row": 5,
+              "col": 5
+            },
+            {
+              "row": 6,
+              "col": 6
+            },
+            {
+              "row": 7,
+              "col": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "size": 14,
+      "topic": "Coffee Shop",
+      "words": [
+        {
+          "label": "Cup",
+          "value": "CUP"
+        },
+        {
+          "label": "Mug",
+          "value": "MUG"
+        },
+        {
+          "label": "Lid",
+          "value": "LID"
+        },
+        {
+          "label": "Sleeve",
+          "value": "SLEEVE"
+        },
+        {
+          "label": "Stirrer",
+          "value": "STIRRER"
+        },
+        {
+          "label": "Spoon",
+          "value": "SPOON"
+        },
+        {
+          "label": "Napkin",
+          "value": "NAPKIN"
+        },
+        {
+          "label": "Tray",
+          "value": "TRAY"
+        },
+        {
+          "label": "Blender",
+          "value": "BLENDER"
+        },
+        {
+          "label": "Cafe",
+          "value": "CAFE"
+        }
+      ],
+      "grid": [
+        [
+          "J",
+          "U",
+          "T",
+          "H",
+          "T",
+          "N",
+          "A",
+          "D",
+          "U",
+          "S",
+          "P",
+          "O",
+          "Q",
+          "A"
+        ],
+        [
+          "W",
+          "B",
+          "K",
+          "T",
+          "Q",
+          "Y",
+          "I",
+          "U",
+          "W",
+          "A",
+          "F",
+          "L",
+          "D",
+          "D"
+        ],
+        [
+          "M",
+          "C",
+          "Y",
+          "W",
+          "B",
+          "Z",
+          "B",
+          "K",
+          "F",
+          "Q",
+          "R",
+          "H",
+          "N",
+          "E"
+        ],
+        [
+          "H",
+          "A",
+          "U",
+          "Q",
+          "H",
+          "T",
+          "I",
+          "R",
+          "P",
+          "E",
+          "B",
+          "Y",
+          "T",
+          "H"
+        ],
+        [
+          "I",
+          "F",
+          "M",
+          "J",
+          "R",
+          "F",
+          "O",
+          "Z",
+          "R",
+          "A",
+          "G",
+          "Z",
+          "E",
+          "K"
+        ],
+        [
+          "J",
+          "E",
+          "D",
+          "I",
+          "L",
+          "L",
+          "S",
+          "R",
+          "F",
+          "C",
+          "N",
+          "P",
+          "W",
+          "B"
+        ],
+        [
+          "Q",
+          "D",
+          "J",
+          "R",
+          "B",
+          "U",
+          "I",
+          "L",
+          "R",
+          "V",
+          "T",
+          "G",
+          "J",
+          "S"
+        ],
+        [
+          "S",
+          "D",
+          "P",
+          "U",
+          "E",
+          "T",
+          "H",
+          "Y",
+          "E",
+          "V",
+          "J",
+          "L",
+          "W",
+          "E"
+        ],
+        [
+          "G",
+          "R",
+          "Q",
+          "C",
+          "S",
+          "D",
+          "S",
+          "G",
+          "A",
+          "E",
+          "E",
+          "I",
+          "P",
+          "O"
+        ],
+        [
+          "K",
+          "U",
+          "F",
+          "U",
+          "L",
+          "H",
+          "N",
+          "I",
+          "B",
+          "R",
+          "V",
+          "H",
+          "D",
+          "L"
+        ],
+        [
+          "Q",
+          "E",
+          "N",
+          "P",
+          "G",
+          "B",
+          "Z",
+          "E",
+          "F",
+          "O",
+          "T",
+          "E",
+          "Y",
+          "Z"
+        ],
+        [
+          "I",
+          "V",
+          "Y",
+          "N",
+          "O",
+          "O",
+          "P",
+          "S",
+          "L",
+          "V",
+          "D",
+          "Q",
+          "P",
+          "D"
+        ],
+        [
+          "U",
+          "M",
+          "U",
+          "G",
+          "N",
+          "E",
+          "N",
+          "B",
+          "T",
+          "B",
+          "G",
+          "A",
+          "E",
+          "P"
+        ],
+        [
+          "T",
+          "L",
+          "V",
+          "R",
+          "A",
+          "N",
+          "F",
+          "G",
+          "R",
+          "J",
+          "C",
+          "A",
+          "E",
+          "Z"
+        ]
+      ],
+      "placements": [
+        {
+          "label": "Blender",
+          "value": "BLENDER",
+          "word": "BLENDER",
+          "clean": "BLENDER",
+          "start": {
+            "row": 12,
+            "col": 9
+          },
+          "end": {
+            "row": 6,
+            "col": 3
+          },
+          "direction": "NW",
+          "path": [
+            {
+              "row": 12,
+              "col": 9
+            },
+            {
+              "row": 11,
+              "col": 8
+            },
+            {
+              "row": 10,
+              "col": 7
+            },
+            {
+              "row": 9,
+              "col": 6
+            },
+            {
+              "row": 8,
+              "col": 5
+            },
+            {
+              "row": 7,
+              "col": 4
+            },
+            {
+              "row": 6,
+              "col": 3
+            }
+          ]
+        },
+        {
+          "label": "Cafe",
+          "value": "CAFE",
+          "word": "CAFE",
+          "clean": "CAFE",
+          "start": {
+            "row": 2,
+            "col": 1
+          },
+          "end": {
+            "row": 5,
+            "col": 1
+          },
+          "direction": "S",
+          "path": [
+            {
+              "row": 2,
+              "col": 1
+            },
+            {
+              "row": 3,
+              "col": 1
+            },
+            {
+              "row": 4,
+              "col": 1
+            },
+            {
+              "row": 5,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "label": "Cup",
+          "value": "CUP",
+          "word": "CUP",
+          "clean": "CUP",
+          "start": {
+            "row": 8,
+            "col": 3
+          },
+          "end": {
+            "row": 10,
+            "col": 3
+          },
+          "direction": "S",
+          "path": [
+            {
+              "row": 8,
+              "col": 3
+            },
+            {
+              "row": 9,
+              "col": 3
+            },
+            {
+              "row": 10,
+              "col": 3
+            }
+          ]
+        },
+        {
+          "label": "Lid",
+          "value": "LID",
+          "word": "LID",
+          "clean": "LID",
+          "start": {
+            "row": 5,
+            "col": 4
+          },
+          "end": {
+            "row": 5,
+            "col": 2
+          },
+          "direction": "W",
+          "path": [
+            {
+              "row": 5,
+              "col": 4
+            },
+            {
+              "row": 5,
+              "col": 3
+            },
+            {
+              "row": 5,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "label": "Mug",
+          "value": "MUG",
+          "word": "MUG",
+          "clean": "MUG",
+          "start": {
+            "row": 12,
+            "col": 1
+          },
+          "end": {
+            "row": 12,
+            "col": 3
+          },
+          "direction": "E",
+          "path": [
+            {
+              "row": 12,
+              "col": 1
+            },
+            {
+              "row": 12,
+              "col": 2
+            },
+            {
+              "row": 12,
+              "col": 3
+            }
+          ]
+        },
+        {
+          "label": "Napkin",
+          "value": "NAPKIN",
+          "word": "NAPKIN",
+          "clean": "NAPKIN",
+          "start": {
+            "row": 5,
+            "col": 10
+          },
+          "end": {
+            "row": 0,
+            "col": 5
+          },
+          "direction": "NW",
+          "path": [
+            {
+              "row": 5,
+              "col": 10
+            },
+            {
+              "row": 4,
+              "col": 9
+            },
+            {
+              "row": 3,
+              "col": 8
+            },
+            {
+              "row": 2,
+              "col": 7
+            },
+            {
+              "row": 1,
+              "col": 6
+            },
+            {
+              "row": 0,
+              "col": 5
+            }
+          ]
+        },
+        {
+          "label": "Sleeve",
+          "value": "SLEEVE",
+          "word": "SLEEVE",
+          "clean": "SLEEVE",
+          "start": {
+            "row": 5,
+            "col": 6
+          },
+          "end": {
+            "row": 10,
+            "col": 11
+          },
+          "direction": "SE",
+          "path": [
+            {
+              "row": 5,
+              "col": 6
+            },
+            {
+              "row": 6,
+              "col": 7
+            },
+            {
+              "row": 7,
+              "col": 8
+            },
+            {
+              "row": 8,
+              "col": 9
+            },
+            {
+              "row": 9,
+              "col": 10
+            },
+            {
+              "row": 10,
+              "col": 11
+            }
+          ]
+        },
+        {
+          "label": "Spoon",
+          "value": "SPOON",
+          "word": "SPOON",
+          "clean": "SPOON",
+          "start": {
+            "row": 11,
+            "col": 7
+          },
+          "end": {
+            "row": 11,
+            "col": 3
+          },
+          "direction": "W",
+          "path": [
+            {
+              "row": 11,
+              "col": 7
+            },
+            {
+              "row": 11,
+              "col": 6
+            },
+            {
+              "row": 11,
+              "col": 5
+            },
+            {
+              "row": 11,
+              "col": 4
+            },
+            {
+              "row": 11,
+              "col": 3
+            }
+          ]
+        },
+        {
+          "label": "Stirrer",
+          "value": "STIRRER",
+          "word": "STIRRER",
+          "clean": "STIRRER",
+          "start": {
+            "row": 8,
+            "col": 4
+          },
+          "end": {
+            "row": 2,
+            "col": 10
+          },
+          "direction": "NE",
+          "path": [
+            {
+              "row": 8,
+              "col": 4
+            },
+            {
+              "row": 7,
+              "col": 5
+            },
+            {
+              "row": 6,
+              "col": 6
+            },
+            {
+              "row": 5,
+              "col": 7
+            },
+            {
+              "row": 4,
+              "col": 8
+            },
+            {
+              "row": 3,
+              "col": 9
+            },
+            {
+              "row": 2,
+              "col": 10
+            }
+          ]
+        },
+        {
+          "label": "Tray",
+          "value": "TRAY",
+          "word": "TRAY",
+          "clean": "TRAY",
+          "start": {
+            "row": 10,
+            "col": 10
+          },
+          "end": {
+            "row": 7,
+            "col": 7
+          },
+          "direction": "NW",
+          "path": [
+            {
+              "row": 10,
+              "col": 10
+            },
+            {
+              "row": 9,
+              "col": 9
+            },
+            {
+              "row": 8,
+              "col": 8
+            },
+            {
+              "row": 7,
+              "col": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "size": 14,
+      "topic": "Coffee Shop",
+      "words": [
+        {
+          "label": "Shop",
+          "value": "SHOP"
+        },
+        {
+          "label": "Customer",
+          "value": "CUSTOMER"
+        },
+        {
+          "label": "Table",
+          "value": "TABLE"
+        },
+        {
+          "label": "Chair",
+          "value": "CHAIR"
+        },
+        {
+          "label": "Wifi",
+          "value": "WIFI"
+        },
+        {
+          "label": "Outlet",
+          "value": "OUTLET"
+        },
+        {
+          "label": "Music",
+          "value": "MUSIC"
+        },
+        {
+          "label": "Ambiance",
+          "value": "AMBIANCE"
+        },
+        {
+          "label": "Seating",
+          "value": "SEATING"
+        },
+        {
+          "label": "Counter",
+          "value": "COUNTER"
+        }
+      ],
+      "grid": [
+        [
+          "Z",
+          "V",
+          "F",
+          "R",
+          "C",
+          "C",
+          "Q",
+          "U",
+          "E",
+          "M",
+          "N",
+          "C",
+          "I",
+          "U"
+        ],
+        [
+          "U",
+          "L",
+          "A",
+          "L",
+          "D",
+          "N",
+          "E",
+          "M",
+          "F",
+          "E",
+          "R",
+          "K",
+          "O",
+          "X"
+        ],
+        [
+          "A",
+          "M",
+          "B",
+          "I",
+          "A",
+          "N",
+          "C",
+          "E",
+          "L",
+          "M",
+          "A",
+          "R",
+          "C",
+          "Q"
+        ],
+        [
+          "X",
+          "T",
+          "F",
+          "R",
+          "J",
+          "E",
+          "K",
+          "L",
+          "R",
+          "J",
+          "U",
+          "I",
+          "Q",
+          "A"
+        ],
+        [
+          "C",
+          "A",
+          "R",
+          "P",
+          "S",
+          "L",
+          "T",
+          "W",
+          "F",
+          "E",
+          "S",
+          "S",
+          "J",
+          "S"
+        ],
+        [
+          "J",
+          "B",
+          "R",
+          "I",
+          "T",
+          "C",
+          "B",
+          "H",
+          "I",
+          "U",
+          "C",
+          "U",
+          "A",
+          "E"
+        ],
+        [
+          "G",
+          "L",
+          "T",
+          "L",
+          "A",
+          "J",
+          "U",
+          "B",
+          "M",
+          "F",
+          "J",
+          "N",
+          "X",
+          "A"
+        ],
+        [
+          "P",
+          "E",
+          "C",
+          "N",
+          "G",
+          "H",
+          "V",
+          "S",
+          "G",
+          "B",
+          "I",
+          "P",
+          "O",
+          "T"
+        ],
+        [
+          "H",
+          "O",
+          "T",
+          "N",
+          "M",
+          "Z",
+          "C",
+          "T",
+          "T",
+          "S",
+          "H",
+          "O",
+          "P",
+          "I"
+        ],
+        [
+          "A",
+          "U",
+          "R",
+          "E",
+          "T",
+          "N",
+          "U",
+          "O",
+          "C",
+          "O",
+          "L",
+          "B",
+          "X",
+          "N"
+        ],
+        [
+          "W",
+          "T",
+          "N",
+          "X",
+          "D",
+          "S",
+          "L",
+          "S",
+          "Q",
+          "L",
+          "M",
+          "R",
+          "A",
+          "G"
+        ],
+        [
+          "T",
+          "L",
+          "M",
+          "Q",
+          "G",
+          "S",
+          "U",
+          "R",
+          "M",
+          "P",
+          "C",
+          "E",
+          "S",
+          "Z"
+        ],
+        [
+          "F",
+          "E",
+          "Q",
+          "A",
+          "V",
+          "I",
+          "O",
+          "C",
+          "H",
+          "G",
+          "W",
+          "X",
+          "R",
+          "O"
+        ],
+        [
+          "J",
+          "T",
+          "K",
+          "O",
+          "G",
+          "Q",
+          "R",
+          "U",
+          "H",
+          "X",
+          "A",
+          "T",
+          "Z",
+          "C"
+        ]
+      ],
+      "placements": [
+        {
+          "label": "Ambiance",
+          "value": "AMBIANCE",
+          "word": "AMBIANCE",
+          "clean": "AMBIANCE",
+          "start": {
+            "row": 2,
+            "col": 0
+          },
+          "end": {
+            "row": 2,
+            "col": 7
+          },
+          "direction": "E",
+          "path": [
+            {
+              "row": 2,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 1
+            },
+            {
+              "row": 2,
+              "col": 2
+            },
+            {
+              "row": 2,
+              "col": 3
+            },
+            {
+              "row": 2,
+              "col": 4
+            },
+            {
+              "row": 2,
+              "col": 5
+            },
+            {
+              "row": 2,
+              "col": 6
+            },
+            {
+              "row": 2,
+              "col": 7
+            }
+          ]
+        },
+        {
+          "label": "Chair",
+          "value": "CHAIR",
+          "word": "CHAIR",
+          "clean": "CHAIR",
+          "start": {
+            "row": 8,
+            "col": 6
+          },
+          "end": {
+            "row": 4,
+            "col": 2
+          },
+          "direction": "NW",
+          "path": [
+            {
+              "row": 8,
+              "col": 6
+            },
+            {
+              "row": 7,
+              "col": 5
+            },
+            {
+              "row": 6,
+              "col": 4
+            },
+            {
+              "row": 5,
+              "col": 3
+            },
+            {
+              "row": 4,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "label": "Counter",
+          "value": "COUNTER",
+          "word": "COUNTER",
+          "clean": "COUNTER",
+          "start": {
+            "row": 9,
+            "col": 8
+          },
+          "end": {
+            "row": 9,
+            "col": 2
+          },
+          "direction": "W",
+          "path": [
+            {
+              "row": 9,
+              "col": 8
+            },
+            {
+              "row": 9,
+              "col": 7
+            },
+            {
+              "row": 9,
+              "col": 6
+            },
+            {
+              "row": 9,
+              "col": 5
+            },
+            {
+              "row": 9,
+              "col": 4
+            },
+            {
+              "row": 9,
+              "col": 3
+            },
+            {
+              "row": 9,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "label": "Customer",
+          "value": "CUSTOMER",
+          "word": "CUSTOMER",
+          "clean": "CUSTOMER",
+          "start": {
+            "row": 5,
+            "col": 5
+          },
+          "end": {
+            "row": 12,
+            "col": 12
+          },
+          "direction": "SE",
+          "path": [
+            {
+              "row": 5,
+              "col": 5
+            },
+            {
+              "row": 6,
+              "col": 6
+            },
+            {
+              "row": 7,
+              "col": 7
+            },
+            {
+              "row": 8,
+              "col": 8
+            },
+            {
+              "row": 9,
+              "col": 9
+            },
+            {
+              "row": 10,
+              "col": 10
+            },
+            {
+              "row": 11,
+              "col": 11
+            },
+            {
+              "row": 12,
+              "col": 12
+            }
+          ]
+        },
+        {
+          "label": "Music",
+          "value": "MUSIC",
+          "word": "MUSIC",
+          "clean": "MUSIC",
+          "start": {
+            "row": 6,
+            "col": 8
+          },
+          "end": {
+            "row": 2,
+            "col": 12
+          },
+          "direction": "NE",
+          "path": [
+            {
+              "row": 6,
+              "col": 8
+            },
+            {
+              "row": 5,
+              "col": 9
+            },
+            {
+              "row": 4,
+              "col": 10
+            },
+            {
+              "row": 3,
+              "col": 11
+            },
+            {
+              "row": 2,
+              "col": 12
+            }
+          ]
+        },
+        {
+          "label": "Outlet",
+          "value": "OUTLET",
+          "word": "OUTLET",
+          "clean": "OUTLET",
+          "start": {
+            "row": 8,
+            "col": 1
+          },
+          "end": {
+            "row": 13,
+            "col": 1
+          },
+          "direction": "S",
+          "path": [
+            {
+              "row": 8,
+              "col": 1
+            },
+            {
+              "row": 9,
+              "col": 1
+            },
+            {
+              "row": 10,
+              "col": 1
+            },
+            {
+              "row": 11,
+              "col": 1
+            },
+            {
+              "row": 12,
+              "col": 1
+            },
+            {
+              "row": 13,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "label": "Seating",
+          "value": "SEATING",
+          "word": "SEATING",
+          "clean": "SEATING",
+          "start": {
+            "row": 4,
+            "col": 13
+          },
+          "end": {
+            "row": 10,
+            "col": 13
+          },
+          "direction": "S",
+          "path": [
+            {
+              "row": 4,
+              "col": 13
+            },
+            {
+              "row": 5,
+              "col": 13
+            },
+            {
+              "row": 6,
+              "col": 13
+            },
+            {
+              "row": 7,
+              "col": 13
+            },
+            {
+              "row": 8,
+              "col": 13
+            },
+            {
+              "row": 9,
+              "col": 13
+            },
+            {
+              "row": 10,
+              "col": 13
+            }
+          ]
+        },
+        {
+          "label": "Shop",
+          "value": "SHOP",
+          "word": "SHOP",
+          "clean": "SHOP",
+          "start": {
+            "row": 8,
+            "col": 9
+          },
+          "end": {
+            "row": 8,
+            "col": 12
+          },
+          "direction": "E",
+          "path": [
+            {
+              "row": 8,
+              "col": 9
+            },
+            {
+              "row": 8,
+              "col": 10
+            },
+            {
+              "row": 8,
+              "col": 11
+            },
+            {
+              "row": 8,
+              "col": 12
+            }
+          ]
+        },
+        {
+          "label": "Table",
+          "value": "TABLE",
+          "word": "TABLE",
+          "clean": "TABLE",
+          "start": {
+            "row": 3,
+            "col": 1
+          },
+          "end": {
+            "row": 7,
+            "col": 1
+          },
+          "direction": "S",
+          "path": [
+            {
+              "row": 3,
+              "col": 1
+            },
+            {
+              "row": 4,
+              "col": 1
+            },
+            {
+              "row": 5,
+              "col": 1
+            },
+            {
+              "row": 6,
+              "col": 1
+            },
+            {
+              "row": 7,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "label": "Wifi",
+          "value": "WIFI",
+          "word": "WIFI",
+          "clean": "WIFI",
+          "start": {
+            "row": 4,
+            "col": 7
+          },
+          "end": {
+            "row": 7,
+            "col": 10
+          },
+          "direction": "SE",
+          "path": [
+            {
+              "row": 4,
+              "col": 7
+            },
+            {
+              "row": 5,
+              "col": 8
+            },
+            {
+              "row": 6,
+              "col": 9
+            },
+            {
+              "row": 7,
+              "col": 10
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
