@@ -8,6 +8,7 @@ const envSchema = z.object({
   MODEL_NAME: z.string().min(1).default("gemini-2.5-flash"),
   LANGUAGE: z.string().min(2).default("es"),
   OUTPUT_DIR: z.string().min(1).default("./generated"),
+  LATEST_DATED_PUZZLES_TS_OUTPUT_DIR: z.string().default(""),
   WORDS_COUNT: z.coerce.number().int().positive().default(50),
   WORDS_REQUEST_COUNT: z.coerce.number().int().positive().default(65),
   PUZZLE_COUNT: z.coerce.number().int().positive().default(5),
