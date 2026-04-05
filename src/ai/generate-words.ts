@@ -3,6 +3,7 @@ import type { DailyWord, DailyWordsData } from "../types/words.js";
 import { createContentHash } from "../utils/hash.js";
 import { stripMarkdownCodeFence, normalizeWordValue } from "../utils/normalize.js";
 import { toTitleCase } from "../utils/text.js";
+import { normalizeWordLabel } from "../utils/words.js";
 import { buildWordsPrompt } from "./prompts.js";
 import { generateText } from "./gemini.js";
 
@@ -16,13 +17,13 @@ function normalizeWords(rawWords: unknown[]): DailyWord[] {
   const normalizedWords: DailyWord[] = [];
 
   for (const item of rawWords) {
-    const label = String(item ?? "").trim();
+    const rawLabel = String(item ?? "").trim();
 
-    if (label.length === 0) {
+    if (rawLabel.length === 0) {
       continue;
     }
 
-    const value = normalizeWordValue(label);
+    const value = normalizeWordValue(rawLabel);
 
     if (value.length < 3) {
       continue;
@@ -34,7 +35,7 @@ function normalizeWords(rawWords: unknown[]): DailyWord[] {
 
     seen.add(value);
     normalizedWords.push({
-      label,
+      label: normalizeWordLabel(rawLabel),
       value
     });
   }
