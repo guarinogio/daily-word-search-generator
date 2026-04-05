@@ -1,0 +1,1 @@
+console.log("daily-word-search-generator: bootstrap ready");
