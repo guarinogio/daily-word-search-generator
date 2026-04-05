@@ -28,7 +28,9 @@ export type DailyPuzzle = {
 };
 
 export type DailyPuzzlesData = {
+  id: string;
   date: string;
   topic: string;
+  hash: string;
   puzzles: DailyPuzzle[];
 };

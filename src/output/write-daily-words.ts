@@ -26,8 +26,10 @@ export function writeDailyWordsTs(dailyWords: DailyWordsData): void {
 };
 
 export type DailyWordsData = {
+  id: string;
   date: string;
   topic: string;
+  hash: string;
   words: DailyWord[];
 };
 

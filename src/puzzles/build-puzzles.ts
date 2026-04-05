@@ -3,8 +3,10 @@ import { env } from "../config/env.js";
 import { paths } from "../config/paths.js";
 import type { DailyPuzzlesData, DailyPuzzle } from "../types/puzzles.js";
 import type { DailyWordsData } from "../types/words.js";
+import { createContentHash } from "../utils/hash.js";
 import { chunkArray } from "../utils/chunk.js";
 import { generateWordSearchPuzzle } from "./word-search-generator.js";
+import { validateDailyPuzzle } from "./validators.js";
 
 export function buildDailyPuzzles(): DailyPuzzlesData {
   if (!fs.existsSync(paths.dailyWordsJson)) {
@@ -36,7 +38,7 @@ export function buildDailyPuzzles(): DailyPuzzlesData {
       size: env.GRID_SIZE
     });
 
-    return {
+    const puzzle: DailyPuzzle = {
       id: index + 1,
       size: generatedPuzzle.size,
       topic: dailyWords.topic,
@@ -44,11 +46,24 @@ export function buildDailyPuzzles(): DailyPuzzlesData {
       grid: generatedPuzzle.grid,
       placements: generatedPuzzle.placements
     };
+
+    validateDailyPuzzle(puzzle);
+
+    return puzzle;
+  });
+
+  const hash = createContentHash({
+    id: dailyWords.id,
+    date: dailyWords.date,
+    topic: dailyWords.topic,
+    puzzles
   });
 
   return {
+    id: dailyWords.id,
     date: dailyWords.date,
     topic: dailyWords.topic,
+    hash,
     puzzles
   };
 }

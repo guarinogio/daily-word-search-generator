@@ -1,6 +1,8 @@
 import { env } from "../config/env.js";
 import type { DailyWord, DailyWordsData } from "../types/words.js";
+import { createContentHash } from "../utils/hash.js";
 import { stripMarkdownCodeFence, normalizeWordValue } from "../utils/normalize.js";
+import { toTitleCase } from "../utils/text.js";
 import { buildWordsPrompt } from "./prompts.js";
 import { generateText } from "./gemini.js";
 
@@ -82,7 +84,7 @@ async function generateOnce(input: {
   const normalizedWords = normalizeWords(parsedPayload.words);
 
   return {
-    topic: parsedPayload.topic.trim(),
+    topic: toTitleCase(parsedPayload.topic.trim()),
     normalizedWords,
     rawApiResponseText: rawResponseText
   };
@@ -107,10 +109,21 @@ export async function generateDailyWords(input: {
         continue;
       }
 
-      const dailyWords: DailyWordsData = {
-        date: new Date().toISOString().slice(0, 10),
+      const date = new Date().toISOString().slice(0, 10);
+      const words = result.normalizedWords.slice(0, env.WORDS_COUNT);
+
+      const hash = createContentHash({
+        date,
         topic: result.topic,
-        words: result.normalizedWords.slice(0, env.WORDS_COUNT)
+        words
+      });
+
+      const dailyWords: DailyWordsData = {
+        id: date,
+        date,
+        topic: result.topic,
+        hash,
+        words
       };
 
       return {
