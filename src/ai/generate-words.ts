@@ -12,6 +12,12 @@ type RawWordsPayload = {
   words?: unknown;
 };
 
+type GenerateDailyWordsInput = {
+  topic?: string;
+  wordsCount?: number;
+  requestedWordsCount?: number;
+};
+
 function normalizeWords(rawWords: unknown[]): DailyWord[] {
   const seen = new Set<string>();
   const normalizedWords: DailyWord[] = [];
@@ -34,6 +40,7 @@ function normalizeWords(rawWords: unknown[]): DailyWord[] {
     }
 
     seen.add(value);
+
     normalizedWords.push({
       label: normalizeWordLabel(rawLabel),
       value
@@ -43,7 +50,11 @@ function normalizeWords(rawWords: unknown[]): DailyWord[] {
   return normalizedWords;
 }
 
-async function generateOnce(input: { topic?: string }): Promise<{
+async function generateOnce(input: {
+  topic?: string;
+  wordsCount: number;
+  requestedWordsCount: number;
+}): Promise<{
   topic: string;
   normalizedWords: DailyWord[];
   rawApiResponseText: string;
@@ -51,8 +62,8 @@ async function generateOnce(input: { topic?: string }): Promise<{
   const prompt = buildWordsPrompt({
     topic: input.topic,
     language: env.LANGUAGE,
-    wordsCount: env.WORDS_COUNT,
-    requestedWordsCount: env.WORDS_REQUEST_COUNT
+    wordsCount: input.wordsCount,
+    requestedWordsCount: input.requestedWordsCount
   });
 
   const { rawResponseText, modelText } = await generateText(prompt);
@@ -77,9 +88,9 @@ async function generateOnce(input: { topic?: string }): Promise<{
     throw new Error("Model output is missing a valid words array");
   }
 
-  if (parsedPayload.words.length !== env.WORDS_REQUEST_COUNT) {
+  if (parsedPayload.words.length !== input.requestedWordsCount) {
     throw new Error(
-      `Expected ${env.WORDS_REQUEST_COUNT} requested words but received ${parsedPayload.words.length}`
+      `Expected ${input.requestedWordsCount} requested words but received ${parsedPayload.words.length}`
     );
   }
 
@@ -92,25 +103,32 @@ async function generateOnce(input: { topic?: string }): Promise<{
   };
 }
 
-export async function generateDailyWords(input: { topic?: string }): Promise<{
+export async function generateDailyWords(input: GenerateDailyWordsInput): Promise<{
   dailyWords: DailyWordsData;
   rawApiResponseText: string;
 }> {
+  const wordsCount = input.wordsCount ?? env.WORDS_COUNT;
+  const requestedWordsCount = input.requestedWordsCount ?? env.WORDS_REQUEST_COUNT;
+
   let lastErrorMessage = "Unknown error";
 
   for (let attempt = 1; attempt <= env.MAX_GENERATION_ATTEMPTS; attempt += 1) {
     try {
-      const result = await generateOnce(input);
+      const result = await generateOnce({
+        topic: input.topic,
+        wordsCount,
+        requestedWordsCount
+      });
 
-      if (result.normalizedWords.length < env.WORDS_COUNT) {
+      if (result.normalizedWords.length < wordsCount) {
         lastErrorMessage =
-          `Attempt ${attempt}: expected at least ${env.WORDS_COUNT} unique valid words after normalization, ` +
+          `Attempt ${attempt}: expected at least ${wordsCount} unique valid words after normalization, ` +
           `but got ${result.normalizedWords.length}`;
         continue;
       }
 
       const date = new Date().toISOString().slice(0, 10);
-      const words = result.normalizedWords.slice(0, env.WORDS_COUNT);
+      const words = result.normalizedWords.slice(0, wordsCount);
 
       const hash = createContentHash({
         date,

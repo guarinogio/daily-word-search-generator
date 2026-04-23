@@ -11,9 +11,9 @@ const envSchema = z.object({
   LATEST_DATED_PUZZLES_TS_OUTPUT_DIR: z.string().default(""),
   WORDS_COUNT: z.coerce.number().int().positive().default(50),
   WORDS_REQUEST_COUNT: z.coerce.number().int().positive().default(65),
-  PUZZLE_COUNT: z.coerce.number().int().positive().default(5),
-  WORDS_PER_PUZZLE: z.coerce.number().int().positive().default(10),
-  GRID_SIZE: z.coerce.number().int().min(8).max(40).default(14),
+  PUZZLE_COUNT: z.coerce.number().int().positive().default(6),
+  WORDS_PER_PUZZLE: z.coerce.number().int().positive().default(50),
+  GRID_SIZE: z.coerce.number().int().min(8).max(150).default(100),
   MAX_GENERATION_ATTEMPTS: z.coerce.number().int().min(1).max(10).default(3)
 });
 
@@ -27,16 +27,9 @@ if (!parsedEnv.success) {
 
 const config = parsedEnv.data;
 
-if (config.PUZZLE_COUNT * config.WORDS_PER_PUZZLE !== config.WORDS_COUNT) {
+if (config.WORDS_REQUEST_COUNT < config.WORDS_PER_PUZZLE) {
   console.error(
-    "Invalid numeric configuration: PUZZLE_COUNT * WORDS_PER_PUZZLE must equal WORDS_COUNT"
-  );
-  process.exit(1);
-}
-
-if (config.WORDS_REQUEST_COUNT < config.WORDS_COUNT) {
-  console.error(
-    "Invalid numeric configuration: WORDS_REQUEST_COUNT must be greater than or equal to WORDS_COUNT"
+    "Invalid numeric configuration: WORDS_REQUEST_COUNT must be greater than or equal to WORDS_PER_PUZZLE"
   );
   process.exit(1);
 }

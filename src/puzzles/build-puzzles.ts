@@ -26,12 +26,6 @@ export function buildDailyPuzzles(): DailyPuzzlesData {
 
   const wordGroups = chunkArray(dailyWords.words, env.WORDS_PER_PUZZLE);
 
-  if (wordGroups.length !== env.PUZZLE_COUNT) {
-    throw new Error(
-      `Expected ${env.PUZZLE_COUNT} word groups but got ${wordGroups.length}`
-    );
-  }
-
   const puzzles: DailyPuzzle[] = wordGroups.map((group, index) => {
     const generatedPuzzle = generateWordSearchPuzzle({
       words: group,
@@ -63,6 +57,61 @@ export function buildDailyPuzzles(): DailyPuzzlesData {
     id: dailyWords.id,
     date: dailyWords.date,
     topic: dailyWords.topic,
+    hash,
+    puzzles
+  };
+}
+
+export function buildDailyPuzzlesFromWordSets(
+  wordSets: DailyWordsData[]
+): DailyPuzzlesData {
+  if (wordSets.length !== env.PUZZLE_COUNT) {
+    throw new Error(`Expected ${env.PUZZLE_COUNT} word sets but got ${wordSets.length}`);
+  }
+
+  const date = wordSets[0]?.date;
+
+  if (!date) {
+    throw new Error("Cannot build puzzles from empty word sets");
+  }
+
+  const puzzles: DailyPuzzle[] = wordSets.map((wordSet, index) => {
+    if (wordSet.words.length !== env.WORDS_PER_PUZZLE) {
+      throw new Error(
+        `Topic "${wordSet.topic}" expected ${env.WORDS_PER_PUZZLE} words but got ${wordSet.words.length}`
+      );
+    }
+
+    const generatedPuzzle = generateWordSearchPuzzle({
+      words: wordSet.words,
+      size: env.GRID_SIZE
+    });
+
+    const puzzle: DailyPuzzle = {
+      id: index + 1,
+      size: generatedPuzzle.size,
+      topic: wordSet.topic,
+      words: wordSet.words,
+      grid: generatedPuzzle.grid,
+      placements: generatedPuzzle.placements
+    };
+
+    validateDailyPuzzle(puzzle);
+
+    return puzzle;
+  });
+
+  const hash = createContentHash({
+    id: date,
+    date,
+    topic: "Multi Topic",
+    puzzles
+  });
+
+  return {
+    id: date,
+    date,
+    topic: "Multi Topic",
     hash,
     puzzles
   };

@@ -4,4 +4,4 @@ generated
 coverage
 .env
 .DS_Store
-*.log
+*.logtopics.json

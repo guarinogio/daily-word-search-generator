@@ -13,6 +13,7 @@
     "generate": "tsx src/cli/index.ts generate-words",
     "build:puzzles": "tsx src/cli/index.ts build-puzzles",
     "daily": "tsx src/cli/index.ts daily",
+    "daily:multi": "tsx src/cli/index.ts daily-multi",
     "check": "tsc --noEmit",
     "lint": "eslint .",
     "format": "prettier --write .",
