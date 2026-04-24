@@ -1,6 +1,10 @@
 export function toTitleCase(input: string): string {
   return input
     .trim()
-    .toLowerCase()
-    .replace(/\b\p{L}/gu, (char) => char.toUpperCase());
+    .normalize("NFC")
+    .replace(/\s+/g, " ")
+    .replace(/\p{L}[\p{L}\p{N}'’_-]*/gu, (word) => {
+      const [first = "", ...rest] = Array.from(word);
+      return `${first.toLocaleUpperCase("en-US")}${rest.join("").toLocaleLowerCase("en-US")}`;
+    });
 }

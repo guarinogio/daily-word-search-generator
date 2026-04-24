@@ -14,15 +14,18 @@ export function stripMarkdownCodeFence(input: string): string {
   return trimmed;
 }
 
-export function removeDiacritics(input: string): string {
-  return input.normalize("NFD").replace(/\p{Diacritic}/gu, "");
+export function removeLatinDiacritics(input: string): string {
+  return input.normalize("NFD").replace(/\p{Diacritic}/gu, "").normalize("NFC");
+}
+
+function normalizeCase(input: string): string {
+  return input.toLocaleUpperCase("en-US").normalize("NFC");
 }
 
 export function normalizeWordValue(input: string): string {
-  const noDiacritics = removeDiacritics(input.trim());
-  const upper = noDiacritics.toLocaleUpperCase();
-  const onlyAllowed = upper.replace(/[^\p{L}\p{N} ]+/gu, "");
-  const noSpaces = onlyAllowed.replace(/\s+/g, "");
+  const trimmed = input.trim().normalize("NFC");
+  const onlyLettersAndNumbers = trimmed.replace(/[^\p{L}\p{N} ]+/gu, "");
+  const compact = onlyLettersAndNumbers.replace(/\s+/g, "");
 
-  return noSpaces;
+  return normalizeCase(removeLatinDiacritics(compact));
 }

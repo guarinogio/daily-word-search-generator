@@ -6,6 +6,10 @@ function assert(condition: boolean, message: string): void {
   }
 }
 
+function toCells(input: string): string[] {
+  return Array.from(input.normalize("NFC"));
+}
+
 function readWordFromPath(grid: string[][], placement: Placement): string {
   return placement.path.map((cell) => grid[cell.row]?.[cell.col] ?? "").join("");
 }
@@ -43,10 +47,11 @@ function validatePlacementWord(
   placement: Placement,
   puzzleId: number
 ): void {
-  const reconstructed = readWordFromPath(grid, placement);
+  const reconstructed = readWordFromPath(grid, placement).normalize("NFC");
+  const expected = placement.value.normalize("NFC");
 
   assert(
-    reconstructed === placement.value,
+    reconstructed === expected,
     `Puzzle ${puzzleId}: placement "${placement.value}" does not match grid path, got "${reconstructed}"`
   );
 }
@@ -63,6 +68,13 @@ export function validateDailyPuzzle(puzzle: DailyPuzzle): void {
   for (const row of puzzle.grid) {
     assert(Array.isArray(row), `Puzzle ${puzzle.id}: grid row is not an array`);
     assert(row.length === size, `Puzzle ${puzzle.id}: grid is not square`);
+
+    for (const cell of row) {
+      assert(
+        toCells(cell).length === 1,
+        `Puzzle ${puzzle.id}: grid cell "${cell}" is not exactly one visible character`
+      );
+    }
   }
 
   assert(
@@ -72,8 +84,13 @@ export function validateDailyPuzzle(puzzle: DailyPuzzle): void {
 
   for (const placement of puzzle.placements) {
     assert(
-      placement.path.length === placement.value.length,
-      `Puzzle ${puzzle.id}: placement "${placement.value}" path length does not match word length`
+      placement.value === placement.value.normalize("NFC"),
+      `Puzzle ${puzzle.id}: placement "${placement.value}" is not NFC-normalized`
+    );
+
+    assert(
+      placement.path.length === toCells(placement.value).length,
+      `Puzzle ${puzzle.id}: placement "${placement.value}" path length does not match visible word length`
     );
 
     validatePlacementBounds(placement, size, puzzle.id);

@@ -63,7 +63,14 @@ export function buildManualDailyPuzzles(inputPath: string): DailyPuzzlesData {
     );
   }
 
-  const date = parsed.date ?? new Date().toISOString().slice(0, 10);
+  const date =
+    parsed.date ??
+    new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Europe/Madrid",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit"
+    }).format(new Date());
 
   const puzzles: DailyPuzzle[] = parsed.puzzles.map((manualPuzzle, index) => {
     if (
