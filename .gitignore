@@ -5,3 +5,4 @@ coverage
 .env
 .DS_Store
 *.logtopics.json
+manual-puzzles.json

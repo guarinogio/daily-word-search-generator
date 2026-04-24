@@ -20,8 +20,8 @@ export function removeDiacritics(input: string): string {
 
 export function normalizeWordValue(input: string): string {
   const noDiacritics = removeDiacritics(input.trim());
-  const upper = noDiacritics.toUpperCase();
-  const onlyAllowed = upper.replace(/[^A-Z0-9Ñ ]+/g, "");
+  const upper = noDiacritics.toLocaleUpperCase();
+  const onlyAllowed = upper.replace(/[^\p{L}\p{N} ]+/gu, "");
   const noSpaces = onlyAllowed.replace(/\s+/g, "");
 
   return noSpaces;

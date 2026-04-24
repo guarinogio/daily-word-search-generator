@@ -14,6 +14,7 @@ const envSchema = z.object({
   PUZZLE_COUNT: z.coerce.number().int().positive().default(6),
   WORDS_PER_PUZZLE: z.coerce.number().int().positive().default(50),
   GRID_SIZE: z.coerce.number().int().min(8).max(150).default(100),
+  MIN_WORD_LENGTH: z.coerce.number().int().min(1).max(10).default(2),
   MAX_GENERATION_ATTEMPTS: z.coerce.number().int().min(1).max(10).default(3)
 });
 

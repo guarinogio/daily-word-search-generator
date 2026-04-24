@@ -31,7 +31,7 @@ function normalizeWords(rawWords: unknown[]): DailyWord[] {
 
     const value = normalizeWordValue(rawLabel);
 
-    if (value.length < 3) {
+    if (value.length < env.MIN_WORD_LENGTH) {
       continue;
     }
 

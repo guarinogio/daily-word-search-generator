@@ -19,6 +19,7 @@ import {
 } from "../puzzles/build-puzzles.js";
 import { ensureDirectoryExists } from "../utils/fs.js";
 import { logError, logInfo, logSuccess } from "../utils/logger.js";
+import { buildManualDailyPuzzles } from "../puzzles/build-manual-puzzles.js";
 
 type TopicsFile = {
   topics?: unknown;
@@ -153,6 +154,29 @@ program
     );
 
     const dailyPuzzles = buildDailyPuzzlesFromWordSets(wordSets);
+
+    writeDailyPuzzlesJson(dailyPuzzles);
+    writeDailyPuzzlesTs(dailyPuzzles);
+
+    logSuccess(`Puzzles generated: ${dailyPuzzles.puzzles.length}`);
+    logSuccess(`Wrote: ${paths.dailyPuzzlesJson}`);
+    logSuccess(`Wrote: ${paths.dailyPuzzlesTs}`);
+  });
+
+program
+  .command("build-manual")
+  .description("Build daily word-search puzzles from a manual JSON file without AI")
+  .option("-i, --input <path>", "Path to manual puzzles JSON file", "manual-puzzles.json")
+  .action((options: { input: string }) => {
+    ensureDirectoryExists(paths.outputDir);
+
+    logInfo("Manual mode");
+    logInfo(`Input file: ${options.input}`);
+    logInfo(`Puzzle count: ${env.PUZZLE_COUNT}`);
+    logInfo(`Words per puzzle: ${env.WORDS_PER_PUZZLE}`);
+    logInfo(`Grid size: ${env.GRID_SIZE}`);
+
+    const dailyPuzzles = buildManualDailyPuzzles(options.input);
 
     writeDailyPuzzlesJson(dailyPuzzles);
     writeDailyPuzzlesTs(dailyPuzzles);
