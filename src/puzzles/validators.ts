@@ -16,12 +16,13 @@ function readWordFromPath(grid: string[][], placement: Placement): string {
 
 function validatePlacementBounds(
   placement: Placement,
-  size: number,
+  rows: number,
+  cols: number,
   puzzleId: number
 ): void {
   for (const cell of placement.path) {
     assert(
-      cell.row >= 0 && cell.row < size && cell.col >= 0 && cell.col < size,
+      cell.row >= 0 && cell.row < rows && cell.col >= 0 && cell.col < cols,
       `Puzzle ${puzzleId}: placement "${placement.value}" has out-of-bounds cell (${cell.row}, ${cell.col})`
     );
   }
@@ -57,17 +58,18 @@ function validatePlacementWord(
 }
 
 export function validateDailyPuzzle(puzzle: DailyPuzzle): void {
-  const size = puzzle.size;
+  const rows = puzzle.rows ?? puzzle.size;
+  const cols = puzzle.cols ?? puzzle.size;
 
   assert(Array.isArray(puzzle.grid), `Puzzle ${puzzle.id}: grid must be an array`);
   assert(
-    puzzle.grid.length === size,
-    `Puzzle ${puzzle.id}: grid row count does not match size`
+    puzzle.grid.length === rows,
+    `Puzzle ${puzzle.id}: grid row count does not match rows`
   );
 
   for (const row of puzzle.grid) {
     assert(Array.isArray(row), `Puzzle ${puzzle.id}: grid row is not an array`);
-    assert(row.length === size, `Puzzle ${puzzle.id}: grid is not square`);
+    assert(row.length === cols, `Puzzle ${puzzle.id}: grid row length does not match cols`);
 
     for (const cell of row) {
       assert(
@@ -93,7 +95,7 @@ export function validateDailyPuzzle(puzzle: DailyPuzzle): void {
       `Puzzle ${puzzle.id}: placement "${placement.value}" path length does not match visible word length`
     );
 
-    validatePlacementBounds(placement, size, puzzle.id);
+    validatePlacementBounds(placement, rows, cols, puzzle.id);
     validatePlacementEndpoints(placement, puzzle.id);
     validatePlacementWord(puzzle.grid, placement, puzzle.id);
   }

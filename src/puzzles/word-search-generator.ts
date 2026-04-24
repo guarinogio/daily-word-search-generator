@@ -126,12 +126,12 @@ function buildPlacement(
   };
 }
 
-function createInstance(input: { words: DailyWord[]; size: number }): WordSearch {
+function createInstance(input: { words: DailyWord[]; rows: number; cols: number }): WordSearch {
   const dictionary = input.words.map((word) => word.value.normalize("NFC"));
 
   return new WordSearch({
-    rows: input.size,
-    cols: input.size,
+    rows: input.rows,
+    cols: input.cols,
     dictionary,
     maxWords: input.words.length,
     disabledDirections: [],
@@ -141,7 +141,9 @@ function createInstance(input: { words: DailyWord[]; size: number }): WordSearch
   });
 }
 
-export function generateWordSearchPuzzle(input: { words: DailyWord[]; size: number }): {
+export function generateWordSearchPuzzle(input: { words: DailyWord[]; rows: number; cols: number }): {
+  rows: number;
+  cols: number;
   size: number;
   grid: string[][];
   placements: Placement[];
@@ -172,6 +174,8 @@ export function generateWordSearchPuzzle(input: { words: DailyWord[]; size: numb
     );
 
     return {
+      rows: instance.grid.length,
+      cols: instance.grid[0]?.length ?? 0,
       size: instance.grid.length,
       grid: replaceUnplacedCellsWithFiller({
         grid: normalizedGrid,

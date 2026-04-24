@@ -96,12 +96,15 @@ export function buildManualDailyPuzzles(inputPath: string): DailyPuzzlesData {
 
     const generatedPuzzle = generateWordSearchPuzzle({
       words,
-      size: env.GRID_SIZE
+      rows: env.GRID_ROWS,
+      cols: env.GRID_COLS
     });
 
     const puzzle: DailyPuzzle = {
       id: index + 1,
       size: generatedPuzzle.size,
+      rows: generatedPuzzle.rows,
+      cols: generatedPuzzle.cols,
       topic: toTitleCase(manualPuzzle.title),
       words,
       grid: generatedPuzzle.grid,

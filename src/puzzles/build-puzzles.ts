@@ -29,12 +29,15 @@ export function buildDailyPuzzles(): DailyPuzzlesData {
   const puzzles: DailyPuzzle[] = wordGroups.map((group, index) => {
     const generatedPuzzle = generateWordSearchPuzzle({
       words: group,
-      size: env.GRID_SIZE
+      rows: env.GRID_ROWS,
+      cols: env.GRID_COLS
     });
 
     const puzzle: DailyPuzzle = {
       id: index + 1,
       size: generatedPuzzle.size,
+      rows: generatedPuzzle.rows,
+      cols: generatedPuzzle.cols,
       topic: dailyWords.topic,
       words: group,
       grid: generatedPuzzle.grid,
@@ -84,12 +87,15 @@ export function buildDailyPuzzlesFromWordSets(
 
     const generatedPuzzle = generateWordSearchPuzzle({
       words: wordSet.words,
-      size: env.GRID_SIZE
+      rows: env.GRID_ROWS,
+      cols: env.GRID_COLS
     });
 
     const puzzle: DailyPuzzle = {
       id: index + 1,
       size: generatedPuzzle.size,
+      rows: generatedPuzzle.rows,
+      cols: generatedPuzzle.cols,
       topic: wordSet.topic,
       words: wordSet.words,
       grid: generatedPuzzle.grid,

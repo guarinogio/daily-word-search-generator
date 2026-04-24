@@ -126,7 +126,7 @@ program
     logInfo(`Multi-topic mode`);
     logInfo(`Topics: ${topics.length}`);
     logInfo(`Words per puzzle: ${env.WORDS_PER_PUZZLE}`);
-    logInfo(`Grid size: ${env.GRID_SIZE}`);
+    logInfo(`Grid: ${env.GRID_COLS}x${env.GRID_ROWS}`);
 
     const wordSets = [];
     const rawResponses = [];
@@ -174,7 +174,7 @@ program
     logInfo(`Input file: ${options.input}`);
     logInfo(`Puzzle count: ${env.PUZZLE_COUNT}`);
     logInfo(`Words per puzzle: ${env.WORDS_PER_PUZZLE}`);
-    logInfo(`Grid size: ${env.GRID_SIZE}`);
+    logInfo(`Grid: ${env.GRID_COLS}x${env.GRID_ROWS}`);
 
     const dailyPuzzles = buildManualDailyPuzzles(options.input);
 

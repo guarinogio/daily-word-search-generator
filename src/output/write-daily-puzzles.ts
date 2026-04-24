@@ -40,6 +40,8 @@ export type Placement = {
 export type DailyPuzzle = {
   id: number;
   size: number;
+  rows: number;
+  cols: number;
   topic: string;
   words: DailyWord[];
   grid: string[][];
